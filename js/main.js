@@ -1,18 +1,7 @@
 +function () {
-  var hideAddressBar = function () {
-    if (! window.location.hash) {
-      if (document.height < window.outerHeight)
-        document.body.style.height = (window.outerHeight + 50) + 'px'
+  var isMobile  = /mobile/i.test(navigator.userAgent)
+  var hasNoHash = ! location.hash
 
-      setTimeout(function () {
-        window.scrollTo(0, 1)
-      }, 50)
-    }
-  }
-
-  $(window).on('load', function () {
-    if (! window.pageYOffset) hideAddressBar()
-  })
-
-  $(window).on('orientationchange', hideAddressBar)
+  if (isMobile && hasNoHash)
+    setTimeout(function() { window.scrollTo(0, 1) }, 1000)
 }()
