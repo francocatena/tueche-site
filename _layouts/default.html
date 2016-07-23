@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="es">
+  {% include head.html %}
+  <body>
+    {% include header.html %}
+
+    <div class="container">
+      {% include ie_warning.html %}
+
+      {{ content }}
+    </div>
+
+    {% include footer.html %}
+
+    <script src="/js/vendor/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/vendor/bootstrap.min.js"></script>
+  </body>
+</html>

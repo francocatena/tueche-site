@@ -1,36 +1,44 @@
-<!doctype html>
-<html lang="es">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Tue Che</title>
-  <meta name="description" content="Tue Che (wines from Mendoza, Argentina)">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+---
+layout: default
+---
 
-  <link rel="stylesheet" href="/css/vendor/bootstrap.min.css">
-  <link rel="stylesheet" href="/css/main.css">
-  <link rel="shortcut icon" href="/img/favicon.ico" />
-</head>
-<body>
-  <div class="container">
-    <!--[if lt IE 7]>
-      <p class="browsehappy">
-        Está usando un navegador <strong>desactualizado</strong>.
-        Por favor <a href="http://browsehappy.com/">Actualiza tu navegador</a> para mejorar tu experiencia.
-      </p>
-    <![endif]-->
+<div class="jumbotron text-center">
+  <h1>Tue Che</h1>
+  <br>
+  <p class="label label-primary">
+    Próximamente
+  </p>
+</div>
 
-    <div class="jumbotron text-center">
-      <h1>Tue Che</h1>
-      <br>
-      <p class="label label-primary">
-        Próximamente
-      </p>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Contáctenos</h3>
+      </div>
+
+      <div class="panel-body">
+        <form action="https://formspree.io/contacto@tueche.com.ar">
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input class="form-control" type="text" name="name" id="name" placeholder="Nombre">
+          </div>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input class="form-control" type="email" name="email" id="email" placeholder="Correo">
+          </div>
+          <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea class="form-control" name="message" id="message" rows="3" placeholder="Escriba su consulta"></textarea>
+          </div>
+
+          <input type="hidden" name="_next" value="//www.tueche.com.ar/thanks.html">
+          <input type="hidden" name="_subject" value="Contacto web www.tueche.com.ar">
+          <input class="hidden" type="text" name="_gotcha">
+
+          <button type="submit" class="btn btn-default">Enviar</button>
+        </form>
+      </div>
     </div>
   </div>
-
-  <script src="/js/vendor/jquery.min.js"></script>
-  <script src="/js/main.js"></script>
-  <script src="/js/vendor/bootstrap.min.js"></script>
-</body>
-</html>
+</div>
