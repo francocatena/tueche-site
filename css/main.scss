@@ -4,6 +4,8 @@
 
 @charset "utf-8";
 
-body {
-  margin-top: 3em;
+@media (min-width: 992px) {
+  body {
+    margin-top: 3em;
+  }
 }
