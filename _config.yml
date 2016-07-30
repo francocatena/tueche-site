@@ -3,6 +3,7 @@ email: contacto@tueche.com.ar
 description: >
   Vinos Tue Che (Mendoza - Argentina)
 baseurl: ""
+host: 0.0.0.0
 url: "http://www.tueche.com.ar"
 twitter_username: tuechewines
 github_username:  francocatena

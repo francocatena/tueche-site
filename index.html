@@ -2,47 +2,8 @@
 layout: default
 ---
 
-<div class="jumbotron text-center">
-  <h1>Tue Che</h1>
-  <br>
-  <p class="label label-primary">
-    Próximamente
-  </p>
-</div>
-
-<div class="row">
-  <div class="col-md-6 col-md-offset-3">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h3 class="panel-title">Contáctenos</h3>
-      </div>
-
-      <div class="panel-body">
-        <form action="https://formspree.io/contacto@tueche.com.ar" method="post" data-toggle="validator">
-          <div class="form-group">
-            <label for="name">Nombre</label>
-            <input class="form-control" type="text" name="name" id="name" placeholder="Nombre" required>
-            <div class="help-block with-errors"></div>
-          </div>
-          <div class="form-group">
-            <label for="email">Dirección de correo</label>
-            <input class="form-control" type="email" name="email" id="email" placeholder="Correo" required>
-            <div class="help-block with-errors"></div>
-          </div>
-          <div class="form-group">
-            <label for="message">Mensaje</label>
-            <textarea class="form-control" name="message" id="message" rows="3" placeholder="Escriba su consulta" required></textarea>
-            <div class="help-block with-errors"></div>
-          </div>
-
-          <input type="hidden" name="_next" value="http://www.tueche.com.ar/thanks.html">
-          <input type="hidden" name="_subject" value="Contacto web www.tueche.com.ar">
-          <input type="hidden" name="_format" value="plain">
-          <input class="hidden" type="text" name="_gotcha">
-
-          <button type="submit" class="btn btn-default">Enviar</button>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
+{% include welcome.html %}
+{% include history.html %}
+{% include winery.html %}
+{% include vineyards.html %}
+{% include contact.html %}

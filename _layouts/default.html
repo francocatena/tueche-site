@@ -1,14 +1,12 @@
 <!doctype html>
 <html lang="es">
   {% include head.html %}
-  <body>
+  <body class="classic" data-spy="scroll" data-target=".scrollspy_menu">
     {% include header.html %}
 
-    <div class="container">
-      {% include ie_warning.html %}
+    {% include ie_warning.html %}
 
-      {{ content }}
-    </div>
+    {{ content }}
 
     {% include footer.html %}
 
@@ -16,5 +14,14 @@
     <script src="/js/main.js"></script>
     <script src="/js/vendor/bootstrap.min.js"></script>
     <script src="/js/vendor/validator.min.js"></script>
+
+    <script src="js/vendor/plugins/smoothscroll.js"></script>
+    <script src="js/vendor/plugins/jquery.waypoints.min.js"></script>
+    <script src="js/vendor/plugins/imagesloaded.pkgd.min.js"></script>
+    <script src="js/vendor/plugins/isotope.pkgd.min.js"></script>
+    <script src="js/vendor/plugins/lightbox.min.js"></script>
+
+    <script src="js/vendor/theme/custom_classic.js"></script>
+    <script src="js/vendor/theme/custom.js"></script>
   </body>
 </html>

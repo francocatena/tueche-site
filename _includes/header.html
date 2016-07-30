@@ -1,2 +1,44 @@
-<header class="site-header">
-</header>
+<nav class="navbar navbar-default navbar__initial navbar-fixed-top scrollspy_menu" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Cambiar navegación</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#welcome">Tue Che</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="fullpage__nav nav navbar-nav navbar-right">
+        <li><a href="#history">Historia</a></li>
+        <li><a href="#winery">Bodega</a></li>
+        <li><a href="#vineyards">Viñedos</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="hidden sidebar__btn sidebar__btn_open">
+  <span class="sidebar-btn__caption">Menu</span>
+  <span class="oi oi-menu sidebar-btn__icon sidebar-btn-icon__unhover " title="Open menu" aria-hidden="true"></span>
+  <span class="oi oi-arrow-left sidebar-btn__icon sidebar-btn-icon__hover" title="Open menu" aria-hidden="true"></span>
+</div>
+
+<div class="sidebar__menu sidebar__menu_hidden scrollspy_menu">
+  <div class="sidebar__btn sidebar__btn_close">
+    <span class="sidebar-btn__caption">Menu</span>
+    <span class="oi oi-menu sidebar-btn__icon sidebar-btn-icon__unhover " title="Close menu" aria-hidden="true"></span>
+    <span class="oi oi-arrow-right sidebar-btn__icon sidebar-btn-icon__hover" title="Close menu" aria-hidden="true"></span>
+  </div>
+
+  <div class="sidebar-menu__brand">Tue Che</div>
+
+  <ul class="fullpage__nav sidebar-menu__ul nav">
+    <li><a href="#history">Historia</a></li>
+    <li><a href="#winery">Bodega</a></li>
+    <li><a href="#vineyards">Viñedos</a></li>
+    <li><a href="#contact">Contacto</a></li>
+  </ul>
+</div>
