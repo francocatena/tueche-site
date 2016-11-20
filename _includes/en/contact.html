@@ -1,0 +1,57 @@
+<div class="site-wrapper" id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1 class="heading">
+          <span class="text-primary">Contact Us</span>
+        </h1>
+
+        <p class="heading__sub">
+          Please do not hesitate to contact us with any questions. It is always a pleasure to hear from wine enthusiasts.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
+        <form action="https://formspree.io/contacto@tueche.com.ar" method="post" data-toggle="validator">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input class="form-control" type="text" name="name" id="name" placeholder="Name" required>
+                <div class="help-block with-errors"></div>
+              </div>
+              <div class="form-group">
+                <label for="email">Email address</label>
+                <input class="form-control" type="email" name="email" id="email" placeholder="Email" required>
+                <div class="help-block with-errors"></div>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" name="message" id="message" rows="5" placeholder="Write your message" required></textarea>
+                <div class="help-block with-errors"></div>
+              </div>
+            </div>
+          </div>
+
+          <input type="hidden" name="_next" value="http://www.tueche.com.ar/en/thanks.html">
+          <input type="hidden" name="_subject" value="Contact from web www.tueche.com.ar">
+          <input type="hidden" name="_format" value="plain">
+          <input class="hidden" type="text" name="_gotcha">
+
+          <div class="text-center">
+            <button type="submit" class="btn btn-lg btn-default">
+              <span class="oi oi-arrow-right" title="Send" aria-hidden="true"></span>
+              <span>Send</span>
+            </button>
+            <div class="clearfix"></div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
