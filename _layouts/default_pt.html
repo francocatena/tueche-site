@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt">
+  {% include head.html %}
+  <body class="classic" data-spy="scroll" data-target=".scrollspy_menu">
+    {% include pt/header.html %}
+
+    {% include pt/ie_warning.html %}
+
+    {{ content }}
+
+    {% include footer.html %}
+
+    <script src="/js/vendor/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/vendor/bootstrap.min.js"></script>
+    <script src="/js/vendor/validator.min.js"></script>
+
+    <script src="/js/vendor/plugins/smoothscroll.js"></script>
+    <script src="/js/vendor/plugins/jquery.waypoints.min.js"></script>
+    <script src="/js/vendor/plugins/imagesloaded.pkgd.min.js"></script>
+    <script src="/js/vendor/plugins/isotope.pkgd.min.js"></script>
+    <script src="/js/vendor/plugins/lightbox.min.js"></script>
+
+    <script src="/js/vendor/theme/custom_classic.js"></script>
+    <script src="/js/vendor/theme/custom.js"></script>
+
+    {% include analytics.html %}
+  </body>
+</html>
